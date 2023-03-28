@@ -1,0 +1,33 @@
+Start service complete!
+Start front complete!
+
+> chatgpt-web@2.10.7 dev /root/chatgpt/chatgpt-web
+> vite
+
+
+  VITE v4.2.1  ready in 696 ms
+
+  ➜  Local:   http://localhost:80/
+  ➜  Network: http://192.168.0.142:80/
+node:internal/errors:478
+    ErrorCaptureStackTrace(err);
+    ^
+
+Error: ENOSPC: System limit for number of file watchers reached, watch '/root/chatgpt/chatgpt-web/front.log'
+    at FSWatcher.<computed> (node:internal/fs/watchers:244:19)
+    at Object.watch (node:fs:2296:34)
+    at createFsWatchInstance (file:///root/chatgpt/chatgpt-web/node_modules/vite/dist/node/chunks/dep-79892de8.js:50328:17)
+    at setFsWatchListener (file:///root/chatgpt/chatgpt-web/node_modules/vite/dist/node/chunks/dep-79892de8.js:50375:15)
+    at NodeFsHandler._watchWithNodeFs (file:///root/chatgpt/chatgpt-web/node_modules/vite/dist/node/chunks/dep-79892de8.js:50530:14)
+    at NodeFsHandler._handleFile (file:///root/chatgpt/chatgpt-web/node_modules/vite/dist/node/chunks/dep-79892de8.js:50594:23)
+    at NodeFsHandler._addToNodeFs (file:///root/chatgpt/chatgpt-web/node_modules/vite/dist/node/chunks/dep-79892de8.js:50836:21)
+Emitted 'error' event on FSWatcher instance at:
+    at FSWatcher._handleError (file:///root/chatgpt/chatgpt-web/node_modules/vite/dist/node/chunks/dep-79892de8.js:52028:10)
+    at NodeFsHandler._addToNodeFs (file:///root/chatgpt/chatgpt-web/node_modules/vite/dist/node/chunks/dep-79892de8.js:50844:18) {
+  errno: -28,
+  syscall: 'watch',
+  code: 'ENOSPC',
+  path: '/root/chatgpt/chatgpt-web/front.log',
+  filename: '/root/chatgpt/chatgpt-web/front.log'
+}
+ ELIFECYCLE  Command failed with exit code 1.
